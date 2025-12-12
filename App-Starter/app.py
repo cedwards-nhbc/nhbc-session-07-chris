@@ -59,7 +59,7 @@ app_ui = ui.page_fluid(
 
 # --- 3. SERVER LOGIC ---
 
-
+def server(input, output, session):
     
     # TODO: Reactive Data Filter
     # @reactive.Calc
