@@ -1,0 +1,250 @@
+---
+title: "Session 7: Warmup Exercises"
+subtitle: "Getting Started with Shiny for Python"
+format: html
+---
+
+# Introduction
+
+Before we build the main "Outlier Excluder" application, let's practice with the core concepts of Shiny using the examples we just saw.
+
+For each exercise, start with the corresponding example file in `Session-07/Warmup-Starter/`, copy it to a new file (e.g., `ex1_hello.py`), and modify it as requested.
+
+# Exercise 1: Personalizing Hello World
+
+**Base File**: `01_hello.py`
+
+The current app just takes a number. Let's make it more personal.
+
+## Task
+
+1.  Add a **Text Input** to the UI that asks for the user's name.
+    *   *Hint*: Use `ui.input_text("id", "Label")`.
+2.  Update the server logic to include the name in the output message.
+    *   *Goal*: "Hello, [Name]! You selected [N] claims."
+
+## Solution
+
+<details>
+<summary>Click to see solution</summary>
+
+```python
+from shiny import App, ui, render, run_app
+
+app_ui = ui.page_fluid(
+    ui.h2("Hello, Actuaries!"),
+    # Task 1: Add text input
+    ui.input_text("name", "Enter your name", value="Actuary"),
+    ui.input_slider("n", "Number of Claims", 0, 100, 20),
+    ui.output_text_verbatim("txt"),
+)
+
+def server(input, output, session):
+    @render.text
+    def txt():
+        # Task 2: Use the name input
+        return f"Hello, {input.name()}! You selected {input.n()} claims."
+
+app = App(app_ui, server)
+
+if __name__ == "__main__":
+    run_app(app, launch_browser=True)
+```
+</details>
+
+# Exercise 2: Reactive Statistics
+
+**Base File**: `02_reactive.py`
+
+The current app calculates a sum. Let's add some more statistics to see the power of `@reactive.calc`.
+
+## Task
+
+1.  Modify the `random_data` calculator to return a list of numbers instead of a single sum.
+    *   *Hint*: `return np.random.randint(0, 100, input.n())`
+2.  Update the existing output to show the **Sum** of these numbers.
+3.  Add a **new output** that shows the **Average** (Mean) of these numbers.
+4.  Add a **new output** that shows the **Maximum** of these numbers.
+
+*Note: Verify that when you click "Regenerate", all three numbers change together.*
+
+## Solution
+<details>
+<summary>Click to see solution</summary>
+
+```python
+from shiny import App, ui, render, reactive, run_app
+import numpy as np
+
+app_ui = ui.page_fluid(
+    ui.h2("Reactivity 101"),
+    ui.input_slider("n", "Count", 1, 100, 10),
+    ui.input_action_button("btn", "Regenerate"),
+    
+    ui.h4("Sum"),
+    ui.output_text_verbatim("sum_out"),
+    
+    # Task 3 & 4: Add UI for Mean and Max
+    ui.h4("Mean"),
+    ui.output_text_verbatim("mean_out"),
+    ui.h4("Max"),
+    ui.output_text_verbatim("max_out"),
+)
+
+def server(input, output, session):
+    
+    @reactive.calc
+    def random_data():
+        input.btn() 
+        # Task 1: Return array
+        return np.random.randint(0, 100, input.n())
+
+    @render.text
+    def sum_out():
+        # Task 2: Calculate sum
+        data = random_data()
+        return f"Sum: {np.sum(data)}"
+
+    @render.text
+    def mean_out():
+        # Task 3: Calculate mean
+        data = random_data()
+        return f"Mean: {np.mean(data):.2f}"
+
+    @render.text
+    def max_out():
+        # Task 4: Calculate max
+        data = random_data()
+        return f"Max: {np.max(data)}"
+
+app = App(app_ui, server)
+
+if __name__ == "__main__":
+    run_app(app, launch_browser=True)
+```
+</details>
+
+# Exercise 3: Widget Wonderland
+#
+**Base File**: `03_widgets.py`
+
+Let's explore different ways to capture user input.
+
+## Task
+
+1.  Add a `ui.input_radio_buttons` to let the user select a "Distribution Type".
+    *   Options: "Normal", "Uniform", "Exponential".
+2.  Display the selected distribution type in the text output.
+
+## Solution
+
+<details>
+<summary>Click to see solution</summary>
+
+```python
+from shiny import App, ui, render, run_app
+
+app_ui = ui.page_fluid(
+    ui.h2("Widget Showcase"),
+    ui.layout_sidebar(
+        ui.sidebar(
+            ui.input_select("var", "Select Variable", choices=["Premium", "Claims", "Expenses"]),
+            # Task 1: Add Radio Buttons
+            ui.input_radio_buttons("dist", "Distribution", 
+                                 choices=["Normal", "Uniform", "Exponential"]),
+            ui.input_date("date", "Valuation Date"),
+            ui.input_checkbox("flag", "Include IBNR?", True),
+        ),
+        ui.output_text_verbatim("summary")
+    )
+)
+
+def server(input, output, session):
+    @render.text
+    def summary():
+        return (
+            f"Variable: {input.var()}\n"
+            f"Distribution: {input.dist()}\n" # Task 2: Show selection
+            f"Date: {input.date()}\n"
+            f"IBNR: {input.flag()}"
+        )
+
+app = App(app_ui, server)
+
+if __name__ == "__main__":
+    run_app(app, launch_browser=True)
+```
+</details>
+
+# Exercise 4: Layouts & Plotly
+
+**Base File**: `04_layout.py`
+
+We have a sidebar layout. Let's make the main area more interesting using columns and a new control.
+
+## Task
+
+1.  Add a **Checkbox** in the sidebar: "Show Grid".
+2.  Update the Plotly chart to show or hide the grid lines based on this checkbox.
+    *   *Hint*: `fig.update_layout(xaxis=dict(showgrid=input.show_grid()), ...)`
+3.  (Optional) Arrange the "Distribution Plot" and "Summary Statistics" cards side-by-side using `ui.layout_columns()`.
+
+## Solution
+
+<details>
+<summary>Click to see solution</summary>
+
+```python
+from shiny import App, ui, render, run_app
+from shinywidgets import output_widget, render_widget
+import plotly.express as px
+import numpy as np
+
+app_ui = ui.page_sidebar(
+    ui.sidebar(
+        ui.h3("Controls"),
+        ui.input_slider("n", "Sample Size", 10, 1000, 500),
+        ui.input_select("color", "Color", choices=["blue", "red", "green"]),
+        # Task 1: Add Checkbox
+        ui.input_checkbox("show_grid", "Show Grid", True),
+    ),
+    # Task 3: Use layout_columns
+    ui.layout_columns(
+        ui.card(
+            ui.card_header("Distribution Plot"),
+            output_widget("dist_plot"),
+        ),
+        ui.card(
+            ui.card_header("Summary Statistics"),
+            ui.output_text_verbatim("stats"),
+        ),
+        col_widths=(8, 4) # 8/12 for plot, 4/12 for stats
+    )
+)
+
+def server(input, output, session):
+    
+    @render_widget
+    def dist_plot():
+        rng = np.random.default_rng(123)
+        data = rng.standard_normal(input.n())
+        fig = px.histogram(x=data, nbins=30, title=f"Histogram of {input.n()} points")
+        fig.update_traces(marker_color=input.color())
+        
+        # Task 2: Update grid
+        fig.update_layout(
+            xaxis=dict(showgrid=input.show_grid()),
+            yaxis=dict(showgrid=input.show_grid())
+        )
+        return fig
+
+    @render.text
+    def stats():
+        return f"Selected N: {input.n()}"
+
+app = App(app_ui, server)
+
+if __name__ == "__main__":
+    run_app(app, launch_browser=True)
+```
+</details>

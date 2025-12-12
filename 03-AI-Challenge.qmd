@@ -1,0 +1,120 @@
+---
+title: "Session 7: The AI Challenge"
+subtitle: "Natural Language Filtering with Shiny & LLMs"
+format: html
+---
+
+# Introduction
+
+The "Holy Grail" of data interfaces is to simply *ask* for what you want.
+Instead of clicking 10 filters to find "High risk timber properties in London", why not just type it?
+
+In this challenge, we will build a **Chat Interface** that converts natural language into data filters.
+
+# The Architecture
+
+1.  **User** types a query: *"Show me high risk timber buildings in London"*
+2.  **App** sends this query + the *Data Schema* to an LLM (Ollama, Gemini, or Azure).
+3.  **LLM** responds with a structured filter (JSON or SQL-like).
+4.  **App** applies the filter to the Polars DataFrame.
+5.  **App** updates the Data Grid and Map.
+
+# Exercise 1: The Starter App
+
+Open `Session-07/AI-Lab-Starter/app.py`.
+
+It currently has:
+*   A `ui.chat_ui()` component (new in Shiny!).
+*   A Data Grid showing `properties.csv`.
+*   A basic reactive structure.
+
+## Task 1.1: Run the App
+
+Run the app and try typing in the chat. You'll see it just echoes your message. The data doesn't change.
+
+```bash
+shiny run Session-7/AI-Lab-Starter/app.py
+```
+
+# Exercise 2: The "Translator" (Prompt Engineering)
+
+We need a function that takes the user's text and returns a **Polars Filter Expression**.
+
+Since we can't easily execute raw code safely, we will ask the LLM to return a **JSON object** representing the filters.
+
+**Target JSON Structure:**
+```json
+{
+  "Location": "London",
+  "Construction": "Timber Frame",
+  "FloodRisk": "High"
+}
+```
+
+## Task 2.1: Define the System Prompt
+
+In `app.py`, look for the `SYSTEM_PROMPT`.
+Update it to explain the valid columns and values to the LLM.
+*   Columns: `Location`, `Construction`, `FloodRisk`, `SumInsured`, `YearBuilt`.
+*   Provide examples of valid values (e.g., "Masonry", "Timber Frame").
+
+# Exercise 3: The Chat Logic
+
+## Task 3.1: Call Ollama
+
+We will use the `openai` client to talk to our LLM. This client works with Ollama, Gemini, and Azure!
+
+### Option A: Ollama (Local)
+```python
+client = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')
+MODEL = "llama3.2:3b"
+```
+
+### Option B: Google Gemini
+You need a Google API Key.
+```python
+client = OpenAI(
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+    api_key="YOUR_GOOGLE_API_KEY"
+)
+MODEL = "gemini-1.5-flash"
+```
+
+### Option C: Azure OpenAI
+You need your Endpoint and API Key.
+```python
+from openai import AzureOpenAI
+client = AzureOpenAI(
+    api_key="YOUR_AZURE_KEY",
+    api_version="2023-12-01-preview",
+    azure_endpoint="https://YOUR_RESOURCE.openai.azure.com/"
+)
+MODEL = "gpt-4o" # Your deployment name
+```
+
+### The Call
+Inside the `on_chat_submit` function:
+
+1.  Construct the messages list (System Prompt + User Message).
+2.  Call `client.chat.completions.create(...)` with `model=MODEL`.
+3.  Request `response_format={"type": "json_object"}` to ensure valid JSON.
+
+## Task 3.2: Parse and Filter
+
+1.  Parse the JSON response.
+2.  Build a Polars filter expression.
+    *   *Hint*: Start with `mask = pl.lit(True)`. Loop through the JSON keys and add `& (pl.col(key) == value)`.
+3.  Update the `filtered_data` reactive value.
+
+# Exercise 4: The Feedback Loop
+
+## Task 4.1: Show the "Thinking"
+
+It's good practice to show the user what the AI decided.
+Append a message to the chat saying:
+*"I applied the following filters: Location='London', FloodRisk='High'..."*
+
+# Bonus: Fuzzy Matching
+
+What if the user types "London area"? Or "Brick" instead of "Masonry"?
+Can you update your System Prompt or your Filter Logic to handle partial matches?

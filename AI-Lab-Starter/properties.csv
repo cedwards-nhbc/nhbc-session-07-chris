@@ -1,0 +1,1001 @@
+PolicyID,Location,SumInsured,Construction,FloodRisk,YearBuilt
+POL-000000,Leeds,599000.0,Reinforced Concrete,Medium,1932
+POL-000001,Glasgow,849000.0,Steel Frame,Low,1956
+POL-000002,Birmingham,1305000.0,Masonry,Low,1951
+POL-000003,Glasgow,887000.0,Reinforced Concrete,Medium,1908
+POL-000004,Glasgow,1014000.0,Masonry,Medium,1953
+POL-000005,Manchester,1497000.0,Steel Frame,Low,2010
+POL-000006,Birmingham,950000.0,Masonry,Medium,1900
+POL-000007,Birmingham,4494000.0,Steel Frame,Low,1943
+POL-000008,Birmingham,493000.0,Steel Frame,Medium,1998
+POL-000009,Glasgow,2670000.0,Steel Frame,Low,1974
+POL-000010,Leeds,2111000.0,Steel Frame,High,1997
+POL-000011,Birmingham,4914000.0,Masonry,Low,1979
+POL-000012,Bristol,649000.0,Masonry,Low,1908
+POL-000013,Glasgow,2049000.0,Timber Frame,Low,1931
+POL-000014,Manchester,4850000.0,Masonry,Low,1914
+POL-000015,Leeds,4341000.0,Steel Frame,Low,1911
+POL-000016,Bristol,4104000.0,Masonry,Low,1996
+POL-000017,Bristol,1364000.0,Reinforced Concrete,Medium,2008
+POL-000018,Manchester,937000.0,Steel Frame,Low,1977
+POL-000019,Leeds,3376000.0,Steel Frame,Low,2020
+POL-000020,Glasgow,4654000.0,Masonry,Low,1956
+POL-000021,London,2828000.0,Steel Frame,Low,1907
+POL-000022,Leeds,2901000.0,Reinforced Concrete,Low,1971
+POL-000023,Manchester,1472000.0,Timber Frame,Low,1926
+POL-000024,Bristol,3871000.0,Steel Frame,Low,1961
+POL-000025,Glasgow,1017000.0,Steel Frame,Low,1911
+POL-000026,Leeds,1686000.0,Masonry,Low,1964
+POL-000027,London,2185000.0,Timber Frame,Low,2006
+POL-000028,London,2587000.0,Masonry,Low,2003
+POL-000029,Birmingham,1288000.0,Masonry,Low,1941
+POL-000030,Birmingham,663000.0,Masonry,Very High,1961
+POL-000031,Manchester,3092000.0,Masonry,Low,2014
+POL-000032,Leeds,1514000.0,Masonry,Medium,1910
+POL-000033,Leeds,2948000.0,Masonry,Low,2002
+POL-000034,Bristol,856000.0,Reinforced Concrete,Medium,1942
+POL-000035,Bristol,2458000.0,Timber Frame,Medium,1994
+POL-000036,Bristol,2710000.0,Reinforced Concrete,Low,1916
+POL-000037,Birmingham,354000.0,Timber Frame,Very High,1996
+POL-000038,Leeds,1749000.0,Masonry,Low,1931
+POL-000039,Leeds,759000.0,Timber Frame,Low,2021
+POL-000040,London,411000.0,Timber Frame,Medium,1992
+POL-000041,Birmingham,4951000.0,Masonry,Medium,1984
+POL-000042,Glasgow,1680000.0,Steel Frame,Low,1984
+POL-000043,Birmingham,4068000.0,Masonry,Low,1939
+POL-000044,Glasgow,1348000.0,Steel Frame,Low,1922
+POL-000045,London,3439000.0,Steel Frame,Low,1955
+POL-000046,Manchester,3825000.0,Masonry,Medium,1905
+POL-000047,Leeds,3019000.0,Masonry,Low,1985
+POL-000048,London,2411000.0,Steel Frame,Low,1949
+POL-000049,Leeds,2118000.0,Timber Frame,Low,2001
+POL-000050,Bristol,1809000.0,Masonry,Low,1936
+POL-000051,Manchester,4655000.0,Reinforced Concrete,Low,2008
+POL-000052,Manchester,4170000.0,Masonry,Medium,1963
+POL-000053,London,4829000.0,Steel Frame,Very High,2014
+POL-000054,Manchester,709000.0,Reinforced Concrete,Medium,1953
+POL-000055,Glasgow,3681000.0,Masonry,Low,1971
+POL-000056,Manchester,4698000.0,Masonry,High,2004
+POL-000057,Leeds,988000.0,Masonry,Medium,1948
+POL-000058,Leeds,426000.0,Masonry,Medium,1998
+POL-000059,Leeds,3731000.0,Masonry,Low,2014
+POL-000060,Leeds,2915000.0,Steel Frame,Low,1910
+POL-000061,Glasgow,4225000.0,Masonry,Low,1987
+POL-000062,Birmingham,785000.0,Timber Frame,Low,1948
+POL-000063,Bristol,3997000.0,Reinforced Concrete,Low,1920
+POL-000064,London,1088000.0,Steel Frame,Low,2014
+POL-000065,Leeds,902000.0,Steel Frame,Low,1965
+POL-000066,Manchester,905000.0,Masonry,Medium,1962
+POL-000067,Leeds,4091000.0,Steel Frame,Low,2003
+POL-000068,Manchester,3359000.0,Timber Frame,Low,1982
+POL-000069,Bristol,2663000.0,Timber Frame,Very High,2002
+POL-000070,Bristol,1858000.0,Masonry,High,1927
+POL-000071,Bristol,4398000.0,Steel Frame,Medium,2022
+POL-000072,Manchester,2023000.0,Timber Frame,Very High,1916
+POL-000073,Leeds,4101000.0,Masonry,Low,1905
+POL-000074,Bristol,2252000.0,Masonry,Very High,1918
+POL-000075,Glasgow,1947000.0,Timber Frame,Low,1955
+POL-000076,Manchester,2367000.0,Steel Frame,Low,2001
+POL-000077,Manchester,1577000.0,Steel Frame,Low,1927
+POL-000078,Leeds,3763000.0,Steel Frame,Low,1965
+POL-000079,Manchester,2563000.0,Masonry,Low,1937
+POL-000080,Manchester,1238000.0,Timber Frame,Medium,2018
+POL-000081,Bristol,4508000.0,Timber Frame,Medium,1936
+POL-000082,Leeds,1981000.0,Masonry,Low,2014
+POL-000083,Bristol,2763000.0,Masonry,Low,2015
+POL-000084,Bristol,4542000.0,Steel Frame,Medium,1967
+POL-000085,Leeds,3159000.0,Masonry,Medium,1985
+POL-000086,London,673000.0,Timber Frame,Low,1989
+POL-000087,Bristol,4705000.0,Masonry,Medium,1948
+POL-000088,Glasgow,3176000.0,Masonry,Low,1942
+POL-000089,Glasgow,1741000.0,Masonry,Low,1935
+POL-000090,Manchester,782000.0,Reinforced Concrete,High,1957
+POL-000091,Glasgow,3991000.0,Steel Frame,Low,1912
+POL-000092,Manchester,3138000.0,Reinforced Concrete,Low,1951
+POL-000093,London,2714000.0,Timber Frame,High,1957
+POL-000094,Leeds,4480000.0,Masonry,Medium,1931
+POL-000095,Leeds,3964000.0,Timber Frame,Low,1980
+POL-000096,Leeds,843000.0,Timber Frame,Low,2004
+POL-000097,Glasgow,1627000.0,Steel Frame,Low,1999
+POL-000098,London,1318000.0,Masonry,Medium,2018
+POL-000099,Glasgow,3745000.0,Timber Frame,Low,1959
+POL-000100,Glasgow,264000.0,Masonry,Low,2009
+POL-000101,London,2892000.0,Masonry,Very High,1982
+POL-000102,London,3836000.0,Steel Frame,Low,1957
+POL-000103,London,4396000.0,Timber Frame,Low,2023
+POL-000104,London,1776000.0,Masonry,Low,1998
+POL-000105,Leeds,4124000.0,Masonry,Medium,2009
+POL-000106,Birmingham,642000.0,Timber Frame,Low,2003
+POL-000107,Birmingham,4248000.0,Steel Frame,Low,1955
+POL-000108,London,725000.0,Steel Frame,Medium,2022
+POL-000109,Birmingham,2047000.0,Reinforced Concrete,Low,1927
+POL-000110,Birmingham,4007000.0,Steel Frame,Low,1900
+POL-000111,London,835000.0,Masonry,Low,1941
+POL-000112,Birmingham,1223000.0,Steel Frame,Low,1981
+POL-000113,Glasgow,3639000.0,Timber Frame,Low,1947
+POL-000114,Manchester,3628000.0,Masonry,Low,1939
+POL-000115,Manchester,3242000.0,Steel Frame,Low,1996
+POL-000116,London,3500000.0,Masonry,Low,1962
+POL-000117,Leeds,2759000.0,Reinforced Concrete,Medium,1975
+POL-000118,London,1334000.0,Timber Frame,Very High,1971
+POL-000119,Leeds,1794000.0,Steel Frame,Medium,1987
+POL-000120,Manchester,990000.0,Steel Frame,High,1979
+POL-000121,London,4551000.0,Steel Frame,Low,2013
+POL-000122,Bristol,2959000.0,Steel Frame,Very High,1903
+POL-000123,Glasgow,2064000.0,Steel Frame,Low,1937
+POL-000124,Birmingham,2364000.0,Masonry,Very High,2007
+POL-000125,Leeds,4742000.0,Timber Frame,Very High,1926
+POL-000126,Bristol,851000.0,Masonry,Medium,1908
+POL-000127,Birmingham,2973000.0,Steel Frame,Very High,2010
+POL-000128,Birmingham,2579000.0,Timber Frame,Low,1915
+POL-000129,London,3096000.0,Steel Frame,Low,1955
+POL-000130,Birmingham,189000.0,Masonry,Low,1975
+POL-000131,Glasgow,4373000.0,Masonry,Low,1930
+POL-000132,Bristol,4667000.0,Steel Frame,Low,1987
+POL-000133,Birmingham,2869000.0,Masonry,Medium,2018
+POL-000134,London,3514000.0,Masonry,Very High,1913
+POL-000135,Glasgow,4620000.0,Masonry,Low,2008
+POL-000136,Manchester,3565000.0,Reinforced Concrete,Medium,1924
+POL-000137,Bristol,847000.0,Steel Frame,High,1933
+POL-000138,Birmingham,2924000.0,Masonry,High,1966
+POL-000139,London,3073000.0,Masonry,Very High,2021
+POL-000140,Manchester,2178000.0,Masonry,Low,1923
+POL-000141,Manchester,3709000.0,Steel Frame,Very High,2017
+POL-000142,Leeds,4678000.0,Steel Frame,Medium,2005
+POL-000143,Glasgow,4635000.0,Masonry,Low,1972
+POL-000144,Birmingham,2309000.0,Masonry,Low,1925
+POL-000145,London,655000.0,Masonry,Medium,1919
+POL-000146,Leeds,4926000.0,Steel Frame,Low,1963
+POL-000147,Glasgow,4211000.0,Steel Frame,Medium,2003
+POL-000148,Leeds,711000.0,Masonry,Medium,1909
+POL-000149,Bristol,4612000.0,Masonry,Low,1982
+POL-000150,Glasgow,4362000.0,Masonry,Low,1966
+POL-000151,Glasgow,2642000.0,Reinforced Concrete,Medium,1923
+POL-000152,Birmingham,2997000.0,Masonry,Low,1904
+POL-000153,Glasgow,2055000.0,Steel Frame,Low,1966
+POL-000154,Leeds,368000.0,Steel Frame,Low,1957
+POL-000155,Glasgow,1742000.0,Masonry,Low,1926
+POL-000156,Birmingham,4034000.0,Masonry,High,1979
+POL-000157,Birmingham,123000.0,Masonry,Low,2012
+POL-000158,Bristol,1734000.0,Steel Frame,Medium,1914
+POL-000159,Leeds,2051000.0,Steel Frame,Low,1934
+POL-000160,Manchester,2733000.0,Steel Frame,Low,1975
+POL-000161,Manchester,4607000.0,Timber Frame,Medium,2004
+POL-000162,Glasgow,1797000.0,Masonry,Medium,1952
+POL-000163,Bristol,1800000.0,Reinforced Concrete,Low,1943
+POL-000164,London,3714000.0,Steel Frame,Low,1925
+POL-000165,Glasgow,2316000.0,Masonry,Low,1946
+POL-000166,Bristol,1201000.0,Reinforced Concrete,Low,1933
+POL-000167,Leeds,2317000.0,Steel Frame,Medium,1986
+POL-000168,Leeds,790000.0,Timber Frame,Low,1994
+POL-000169,Leeds,964000.0,Steel Frame,Low,1949
+POL-000170,Leeds,2542000.0,Steel Frame,Low,1983
+POL-000171,Leeds,2153000.0,Steel Frame,High,1911
+POL-000172,Bristol,4583000.0,Masonry,Very High,1986
+POL-000173,Bristol,1876000.0,Masonry,Low,1903
+POL-000174,Birmingham,2945000.0,Reinforced Concrete,Medium,1986
+POL-000175,Manchester,3198000.0,Masonry,Low,1947
+POL-000176,Leeds,164000.0,Masonry,Low,1954
+POL-000177,London,3351000.0,Timber Frame,Medium,2011
+POL-000178,Bristol,972000.0,Timber Frame,High,1900
+POL-000179,London,4809000.0,Steel Frame,Very High,2017
+POL-000180,London,828000.0,Reinforced Concrete,Low,1988
+POL-000181,London,2132000.0,Masonry,Low,1965
+POL-000182,Birmingham,518000.0,Masonry,Medium,1929
+POL-000183,Bristol,4985000.0,Masonry,Low,1902
+POL-000184,London,2561000.0,Steel Frame,Low,2021
+POL-000185,Leeds,3017000.0,Steel Frame,Low,1920
+POL-000186,Glasgow,429000.0,Masonry,Medium,1988
+POL-000187,London,3775000.0,Steel Frame,Low,1983
+POL-000188,Birmingham,1129000.0,Steel Frame,Low,1948
+POL-000189,Bristol,4500000.0,Steel Frame,High,2015
+POL-000190,Birmingham,1105000.0,Reinforced Concrete,Low,1985
+POL-000191,London,1034000.0,Masonry,Low,1984
+POL-000192,Bristol,279000.0,Steel Frame,Low,1961
+POL-000193,Glasgow,2413000.0,Timber Frame,Low,1996
+POL-000194,London,2868000.0,Steel Frame,Low,2015
+POL-000195,Birmingham,422000.0,Steel Frame,Low,1937
+POL-000196,Manchester,3900000.0,Steel Frame,High,1914
+POL-000197,Leeds,2321000.0,Steel Frame,Low,2021
+POL-000198,Birmingham,2670000.0,Masonry,Very High,2021
+POL-000199,Bristol,2260000.0,Timber Frame,Low,2009
+POL-000200,London,2064000.0,Reinforced Concrete,Low,1951
+POL-000201,Leeds,2842000.0,Reinforced Concrete,Low,1978
+POL-000202,London,861000.0,Masonry,Low,1945
+POL-000203,Bristol,991000.0,Masonry,Medium,1924
+POL-000204,London,4323000.0,Masonry,Low,1920
+POL-000205,Manchester,4736000.0,Steel Frame,Low,1987
+POL-000206,Leeds,1929000.0,Steel Frame,High,2020
+POL-000207,Leeds,1427000.0,Masonry,High,2021
+POL-000208,Bristol,3256000.0,Timber Frame,High,1904
+POL-000209,Manchester,2103000.0,Steel Frame,Low,1969
+POL-000210,Birmingham,224000.0,Steel Frame,Medium,2012
+POL-000211,London,865000.0,Timber Frame,Low,2006
+POL-000212,Glasgow,3608000.0,Timber Frame,Low,2011
+POL-000213,London,3329000.0,Timber Frame,Low,2007
+POL-000214,London,233000.0,Masonry,Low,1946
+POL-000215,Birmingham,1188000.0,Timber Frame,Low,1986
+POL-000216,London,1232000.0,Steel Frame,Low,1967
+POL-000217,Manchester,3392000.0,Steel Frame,High,1990
+POL-000218,Manchester,197000.0,Steel Frame,Low,1917
+POL-000219,Leeds,610000.0,Steel Frame,Low,1920
+POL-000220,Bristol,4020000.0,Masonry,Low,1991
+POL-000221,Glasgow,975000.0,Timber Frame,High,1998
+POL-000222,London,3298000.0,Masonry,Low,1985
+POL-000223,London,1267000.0,Masonry,Low,2003
+POL-000224,Birmingham,587000.0,Steel Frame,Medium,1922
+POL-000225,Bristol,1292000.0,Reinforced Concrete,Medium,1963
+POL-000226,Manchester,3639000.0,Masonry,Low,1966
+POL-000227,Glasgow,4293000.0,Timber Frame,Medium,1939
+POL-000228,Leeds,4168000.0,Steel Frame,Medium,2013
+POL-000229,Manchester,2046000.0,Masonry,Medium,1909
+POL-000230,Bristol,3374000.0,Timber Frame,Low,1988
+POL-000231,Leeds,1104000.0,Steel Frame,High,1951
+POL-000232,Birmingham,1536000.0,Steel Frame,Low,2012
+POL-000233,Birmingham,4492000.0,Masonry,Low,1971
+POL-000234,London,164000.0,Masonry,Low,2018
+POL-000235,Bristol,519000.0,Steel Frame,Low,1974
+POL-000236,Glasgow,1119000.0,Timber Frame,Low,1960
+POL-000237,Leeds,230000.0,Masonry,Medium,1963
+POL-000238,Manchester,989000.0,Steel Frame,Low,1904
+POL-000239,Bristol,2957000.0,Masonry,Low,2021
+POL-000240,Bristol,2165000.0,Steel Frame,Low,2008
+POL-000241,Birmingham,4474000.0,Masonry,Low,1952
+POL-000242,London,4105000.0,Reinforced Concrete,Very High,1954
+POL-000243,London,1775000.0,Masonry,Low,1936
+POL-000244,Leeds,1371000.0,Masonry,Low,1955
+POL-000245,Birmingham,1960000.0,Masonry,Low,1958
+POL-000246,Bristol,2992000.0,Masonry,Low,2008
+POL-000247,Glasgow,1414000.0,Steel Frame,Low,2001
+POL-000248,Birmingham,3158000.0,Reinforced Concrete,Medium,1992
+POL-000249,Leeds,2106000.0,Masonry,Very High,1968
+POL-000250,Leeds,2805000.0,Timber Frame,Low,1972
+POL-000251,Birmingham,2237000.0,Steel Frame,Medium,1958
+POL-000252,Leeds,1543000.0,Steel Frame,Medium,2011
+POL-000253,Birmingham,4747000.0,Timber Frame,Medium,1901
+POL-000254,Manchester,3842000.0,Masonry,Low,1964
+POL-000255,Birmingham,787000.0,Timber Frame,Low,2003
+POL-000256,Birmingham,4355000.0,Steel Frame,Low,1959
+POL-000257,Leeds,2488000.0,Masonry,Medium,1950
+POL-000258,Leeds,4483000.0,Steel Frame,Medium,1929
+POL-000259,London,4019000.0,Masonry,Low,1910
+POL-000260,London,2184000.0,Steel Frame,Low,1991
+POL-000261,Manchester,210000.0,Masonry,High,2007
+POL-000262,London,1417000.0,Timber Frame,Medium,1975
+POL-000263,Birmingham,2754000.0,Timber Frame,Very High,1938
+POL-000264,Leeds,3204000.0,Steel Frame,Medium,1989
+POL-000265,London,1364000.0,Masonry,Low,1976
+POL-000266,London,783000.0,Timber Frame,Low,2022
+POL-000267,Manchester,4191000.0,Timber Frame,Medium,1971
+POL-000268,Bristol,4924000.0,Timber Frame,Low,1962
+POL-000269,Manchester,2676000.0,Steel Frame,Low,1963
+POL-000270,Birmingham,941000.0,Steel Frame,Medium,1960
+POL-000271,Leeds,1434000.0,Steel Frame,Low,1953
+POL-000272,Manchester,190000.0,Masonry,Medium,1991
+POL-000273,London,4580000.0,Steel Frame,Low,2021
+POL-000274,Leeds,677000.0,Timber Frame,Very High,1993
+POL-000275,Leeds,2925000.0,Masonry,Low,1972
+POL-000276,London,1443000.0,Masonry,Low,2002
+POL-000277,Manchester,2815000.0,Masonry,Medium,1994
+POL-000278,London,3292000.0,Steel Frame,Low,1957
+POL-000279,Bristol,4166000.0,Steel Frame,Medium,1984
+POL-000280,Leeds,1111000.0,Steel Frame,Medium,1955
+POL-000281,Glasgow,154000.0,Timber Frame,Low,2010
+POL-000282,Glasgow,771000.0,Timber Frame,Low,1933
+POL-000283,Birmingham,4510000.0,Masonry,Low,2018
+POL-000284,London,4382000.0,Masonry,Low,1930
+POL-000285,London,3027000.0,Timber Frame,High,1951
+POL-000286,Birmingham,3043000.0,Masonry,Medium,1988
+POL-000287,Birmingham,3359000.0,Masonry,Medium,1975
+POL-000288,Birmingham,959000.0,Timber Frame,Medium,1900
+POL-000289,Leeds,4581000.0,Steel Frame,Low,1954
+POL-000290,Bristol,2152000.0,Reinforced Concrete,High,1921
+POL-000291,London,1977000.0,Reinforced Concrete,Medium,1939
+POL-000292,Leeds,2643000.0,Steel Frame,Medium,2000
+POL-000293,Birmingham,330000.0,Timber Frame,High,2010
+POL-000294,London,915000.0,Steel Frame,Low,1900
+POL-000295,Leeds,3716000.0,Steel Frame,Medium,1964
+POL-000296,Bristol,506000.0,Masonry,Low,2020
+POL-000297,Leeds,3055000.0,Timber Frame,Low,1962
+POL-000298,Bristol,1302000.0,Steel Frame,Low,2005
+POL-000299,Birmingham,2008000.0,Masonry,Very High,1953
+POL-000300,Bristol,1515000.0,Timber Frame,High,1941
+POL-000301,London,1843000.0,Timber Frame,Medium,1920
+POL-000302,Birmingham,3623000.0,Masonry,Medium,1978
+POL-000303,London,1556000.0,Masonry,Low,1980
+POL-000304,Glasgow,2875000.0,Masonry,High,1921
+POL-000305,Manchester,2433000.0,Masonry,Low,1937
+POL-000306,Bristol,3352000.0,Masonry,Low,1998
+POL-000307,Manchester,4690000.0,Steel Frame,Low,2008
+POL-000308,Manchester,3690000.0,Masonry,Medium,1979
+POL-000309,Bristol,1153000.0,Timber Frame,Medium,1907
+POL-000310,Birmingham,253000.0,Masonry,Low,1961
+POL-000311,Glasgow,1385000.0,Reinforced Concrete,Low,1946
+POL-000312,London,3016000.0,Masonry,Medium,1916
+POL-000313,Leeds,352000.0,Timber Frame,Low,1916
+POL-000314,London,2532000.0,Steel Frame,Medium,2017
+POL-000315,Leeds,3025000.0,Steel Frame,Very High,1989
+POL-000316,London,1738000.0,Masonry,Low,1912
+POL-000317,Bristol,3877000.0,Steel Frame,Low,1916
+POL-000318,Glasgow,622000.0,Timber Frame,Medium,1937
+POL-000319,Leeds,468000.0,Timber Frame,Medium,1980
+POL-000320,Birmingham,3668000.0,Masonry,Low,2011
+POL-000321,London,2528000.0,Masonry,Very High,1977
+POL-000322,London,3473000.0,Steel Frame,Low,1944
+POL-000323,Leeds,2231000.0,Timber Frame,Low,1905
+POL-000324,Birmingham,1307000.0,Timber Frame,Medium,1934
+POL-000325,Birmingham,4114000.0,Steel Frame,High,2009
+POL-000326,Bristol,4017000.0,Steel Frame,Low,1913
+POL-000327,Bristol,3504000.0,Masonry,Medium,2010
+POL-000328,Bristol,1434000.0,Steel Frame,Low,1971
+POL-000329,Bristol,2992000.0,Masonry,Low,1960
+POL-000330,Bristol,1869000.0,Steel Frame,Low,1914
+POL-000331,Bristol,549000.0,Steel Frame,High,1953
+POL-000332,Glasgow,4595000.0,Reinforced Concrete,Low,1926
+POL-000333,Birmingham,770000.0,Masonry,Low,1912
+POL-000334,Bristol,4756000.0,Masonry,Low,2012
+POL-000335,Birmingham,2285000.0,Masonry,High,1930
+POL-000336,Birmingham,1007000.0,Masonry,Medium,2016
+POL-000337,Manchester,2755000.0,Masonry,Medium,2019
+POL-000338,Glasgow,4377000.0,Reinforced Concrete,Low,1934
+POL-000339,Bristol,3688000.0,Masonry,Medium,1959
+POL-000340,London,4052000.0,Masonry,Low,1905
+POL-000341,Leeds,3328000.0,Steel Frame,Medium,1968
+POL-000342,London,3492000.0,Timber Frame,High,1985
+POL-000343,Glasgow,4261000.0,Steel Frame,Low,1957
+POL-000344,Leeds,1323000.0,Masonry,Medium,1948
+POL-000345,Glasgow,2498000.0,Timber Frame,Low,1922
+POL-000346,Birmingham,1184000.0,Masonry,Low,1988
+POL-000347,Leeds,4940000.0,Masonry,Low,1933
+POL-000348,Birmingham,4726000.0,Reinforced Concrete,Low,1925
+POL-000349,London,293000.0,Masonry,Low,1946
+POL-000350,London,3557000.0,Timber Frame,Medium,1904
+POL-000351,Leeds,4634000.0,Timber Frame,Low,1989
+POL-000352,Leeds,985000.0,Masonry,Medium,1919
+POL-000353,Bristol,2883000.0,Steel Frame,Low,1905
+POL-000354,Glasgow,4586000.0,Masonry,Low,1969
+POL-000355,Bristol,266000.0,Steel Frame,Medium,1958
+POL-000356,Glasgow,3517000.0,Reinforced Concrete,Low,1963
+POL-000357,Bristol,1557000.0,Timber Frame,Low,2013
+POL-000358,Birmingham,4630000.0,Reinforced Concrete,Medium,1917
+POL-000359,Leeds,4858000.0,Masonry,Low,1903
+POL-000360,London,4727000.0,Timber Frame,Low,1916
+POL-000361,Glasgow,2424000.0,Masonry,Low,2020
+POL-000362,Glasgow,4324000.0,Steel Frame,High,1913
+POL-000363,London,4238000.0,Reinforced Concrete,Medium,1977
+POL-000364,Bristol,1664000.0,Masonry,Medium,1912
+POL-000365,Glasgow,4162000.0,Steel Frame,Medium,1906
+POL-000366,Birmingham,281000.0,Masonry,Low,1943
+POL-000367,Leeds,3022000.0,Timber Frame,Low,2018
+POL-000368,London,1227000.0,Timber Frame,Medium,1914
+POL-000369,Leeds,691000.0,Reinforced Concrete,Low,1918
+POL-000370,Glasgow,477000.0,Steel Frame,Low,1962
+POL-000371,Glasgow,3512000.0,Masonry,Low,2006
+POL-000372,London,1765000.0,Masonry,Low,2010
+POL-000373,Birmingham,3651000.0,Masonry,Very High,2007
+POL-000374,Manchester,420000.0,Masonry,Low,1934
+POL-000375,London,1645000.0,Masonry,Low,1980
+POL-000376,Manchester,2744000.0,Steel Frame,Low,1934
+POL-000377,Bristol,3975000.0,Timber Frame,Very High,1918
+POL-000378,Manchester,1662000.0,Timber Frame,Low,1919
+POL-000379,Birmingham,3167000.0,Masonry,Low,1999
+POL-000380,Bristol,4441000.0,Steel Frame,Medium,1934
+POL-000381,Manchester,3118000.0,Steel Frame,Medium,1931
+POL-000382,Bristol,1242000.0,Masonry,Low,2021
+POL-000383,Manchester,220000.0,Steel Frame,Low,1947
+POL-000384,Birmingham,4363000.0,Timber Frame,Low,1943
+POL-000385,Manchester,204000.0,Masonry,Low,2003
+POL-000386,Manchester,4386000.0,Timber Frame,Low,1923
+POL-000387,Manchester,2692000.0,Timber Frame,Low,1960
+POL-000388,London,4701000.0,Masonry,Low,1916
+POL-000389,London,4014000.0,Reinforced Concrete,Low,1970
+POL-000390,London,4990000.0,Steel Frame,Medium,2006
+POL-000391,Birmingham,1818000.0,Steel Frame,Very High,1949
+POL-000392,Bristol,3859000.0,Timber Frame,Medium,1964
+POL-000393,Glasgow,2069000.0,Timber Frame,Low,1998
+POL-000394,Manchester,2451000.0,Steel Frame,Low,1931
+POL-000395,Manchester,3175000.0,Timber Frame,Very High,1935
+POL-000396,Birmingham,4381000.0,Masonry,Low,1912
+POL-000397,Manchester,4922000.0,Timber Frame,Low,1969
+POL-000398,London,3865000.0,Steel Frame,Low,1957
+POL-000399,Glasgow,2147000.0,Timber Frame,Medium,1913
+POL-000400,Leeds,2165000.0,Masonry,Medium,1936
+POL-000401,Manchester,3714000.0,Steel Frame,Low,2011
+POL-000402,London,1270000.0,Masonry,Low,1978
+POL-000403,Leeds,641000.0,Masonry,Very High,2010
+POL-000404,Glasgow,1838000.0,Masonry,Low,1967
+POL-000405,Leeds,1507000.0,Masonry,Medium,1939
+POL-000406,London,1552000.0,Steel Frame,Medium,1958
+POL-000407,Bristol,1245000.0,Timber Frame,Medium,1979
+POL-000408,Bristol,306000.0,Masonry,Low,1991
+POL-000409,Leeds,188000.0,Steel Frame,Low,1915
+POL-000410,Birmingham,4940000.0,Steel Frame,Low,1961
+POL-000411,Leeds,2196000.0,Steel Frame,High,1903
+POL-000412,Manchester,1983000.0,Masonry,High,1944
+POL-000413,Manchester,3430000.0,Timber Frame,Low,1989
+POL-000414,Bristol,1169000.0,Reinforced Concrete,Low,1927
+POL-000415,Birmingham,4755000.0,Steel Frame,High,1995
+POL-000416,London,3953000.0,Masonry,Medium,2008
+POL-000417,Manchester,538000.0,Masonry,High,1965
+POL-000418,Bristol,2146000.0,Timber Frame,Low,1930
+POL-000419,Glasgow,4408000.0,Reinforced Concrete,Low,1902
+POL-000420,Bristol,4729000.0,Timber Frame,Medium,2017
+POL-000421,Manchester,2390000.0,Timber Frame,Medium,1907
+POL-000422,Manchester,3106000.0,Masonry,Low,1923
+POL-000423,Bristol,918000.0,Steel Frame,Low,1914
+POL-000424,London,4957000.0,Steel Frame,Low,1942
+POL-000425,Leeds,1235000.0,Masonry,Low,1930
+POL-000426,Manchester,4719000.0,Steel Frame,Low,1972
+POL-000427,Bristol,3283000.0,Reinforced Concrete,Very High,2002
+POL-000428,Bristol,3078000.0,Masonry,Low,1944
+POL-000429,Birmingham,2612000.0,Timber Frame,Medium,1965
+POL-000430,Leeds,1230000.0,Masonry,Low,1907
+POL-000431,Glasgow,965000.0,Steel Frame,Medium,1970
+POL-000432,London,1180000.0,Timber Frame,Very High,2019
+POL-000433,Glasgow,1014000.0,Steel Frame,Low,2007
+POL-000434,Leeds,3920000.0,Steel Frame,Low,2014
+POL-000435,Leeds,1816000.0,Masonry,Low,2002
+POL-000436,Leeds,383000.0,Reinforced Concrete,Low,2005
+POL-000437,Glasgow,4849000.0,Timber Frame,Medium,1956
+POL-000438,Leeds,4431000.0,Masonry,High,1979
+POL-000439,Bristol,4646000.0,Steel Frame,Low,1998
+POL-000440,Glasgow,4975000.0,Steel Frame,Low,1929
+POL-000441,Leeds,952000.0,Masonry,Low,1973
+POL-000442,Bristol,2042000.0,Steel Frame,Medium,2001
+POL-000443,Birmingham,3815000.0,Reinforced Concrete,Low,1917
+POL-000444,Leeds,3511000.0,Masonry,Low,2013
+POL-000445,Glasgow,854000.0,Reinforced Concrete,Medium,1968
+POL-000446,Manchester,4098000.0,Masonry,Medium,2016
+POL-000447,Leeds,1200000.0,Masonry,Low,1992
+POL-000448,Manchester,1197000.0,Masonry,Medium,1938
+POL-000449,Bristol,2731000.0,Steel Frame,Low,1959
+POL-000450,Birmingham,3005000.0,Steel Frame,Low,1997
+POL-000451,London,2942000.0,Masonry,High,1942
+POL-000452,Birmingham,548000.0,Timber Frame,Medium,1944
+POL-000453,Leeds,4400000.0,Steel Frame,Low,1922
+POL-000454,Manchester,1401000.0,Masonry,Low,1968
+POL-000455,Manchester,735000.0,Steel Frame,Low,1993
+POL-000456,Glasgow,4455000.0,Steel Frame,Low,1905
+POL-000457,Manchester,4783000.0,Timber Frame,Low,1955
+POL-000458,Glasgow,4324000.0,Reinforced Concrete,Low,2021
+POL-000459,Bristol,4067000.0,Timber Frame,Low,2009
+POL-000460,London,3311000.0,Reinforced Concrete,Medium,2007
+POL-000461,Leeds,2799000.0,Steel Frame,Medium,1903
+POL-000462,Glasgow,526000.0,Steel Frame,Medium,1992
+POL-000463,London,2101000.0,Masonry,Low,1922
+POL-000464,Manchester,1926000.0,Steel Frame,Very High,1905
+POL-000465,Manchester,1373000.0,Timber Frame,Medium,1931
+POL-000466,London,3645000.0,Masonry,Medium,2005
+POL-000467,Manchester,2530000.0,Masonry,Medium,1917
+POL-000468,Bristol,497000.0,Timber Frame,High,1914
+POL-000469,Bristol,1179000.0,Timber Frame,Low,1939
+POL-000470,London,3448000.0,Steel Frame,Low,2021
+POL-000471,Glasgow,473000.0,Steel Frame,Medium,1995
+POL-000472,Glasgow,4271000.0,Masonry,Medium,1972
+POL-000473,London,2526000.0,Steel Frame,Medium,2000
+POL-000474,Glasgow,2455000.0,Masonry,Low,1973
+POL-000475,Glasgow,3003000.0,Steel Frame,Low,1983
+POL-000476,Bristol,4141000.0,Steel Frame,Low,1905
+POL-000477,Glasgow,1804000.0,Timber Frame,High,2011
+POL-000478,Birmingham,3422000.0,Steel Frame,Low,2019
+POL-000479,Leeds,2872000.0,Masonry,Low,2022
+POL-000480,Manchester,1408000.0,Timber Frame,Low,1962
+POL-000481,Birmingham,4405000.0,Steel Frame,Low,1966
+POL-000482,Glasgow,4007000.0,Timber Frame,High,2005
+POL-000483,Bristol,3326000.0,Masonry,Medium,1910
+POL-000484,London,4268000.0,Timber Frame,Medium,1942
+POL-000485,Glasgow,4350000.0,Steel Frame,Low,1916
+POL-000486,Bristol,3571000.0,Masonry,Medium,1995
+POL-000487,Leeds,4201000.0,Masonry,Low,1903
+POL-000488,Glasgow,3518000.0,Steel Frame,Medium,1962
+POL-000489,London,3433000.0,Steel Frame,Low,1967
+POL-000490,Bristol,3131000.0,Masonry,Low,1980
+POL-000491,Bristol,3788000.0,Masonry,Medium,1940
+POL-000492,Bristol,877000.0,Masonry,High,1982
+POL-000493,Leeds,4416000.0,Masonry,Low,1904
+POL-000494,Glasgow,4372000.0,Timber Frame,Medium,1931
+POL-000495,Leeds,243000.0,Steel Frame,Low,1985
+POL-000496,Manchester,4147000.0,Steel Frame,Low,2019
+POL-000497,Manchester,731000.0,Steel Frame,Low,1969
+POL-000498,Glasgow,1742000.0,Masonry,Low,1934
+POL-000499,Leeds,3743000.0,Steel Frame,Low,1921
+POL-000500,London,888000.0,Timber Frame,Low,1964
+POL-000501,Bristol,4108000.0,Reinforced Concrete,Low,1983
+POL-000502,Bristol,4177000.0,Steel Frame,High,1921
+POL-000503,Glasgow,2587000.0,Masonry,Low,2011
+POL-000504,Manchester,131000.0,Steel Frame,Medium,2018
+POL-000505,Manchester,1506000.0,Masonry,Low,1910
+POL-000506,Bristol,3123000.0,Steel Frame,Medium,1976
+POL-000507,Glasgow,4908000.0,Masonry,Low,2022
+POL-000508,Leeds,3196000.0,Masonry,Low,2005
+POL-000509,Manchester,1373000.0,Steel Frame,Low,1902
+POL-000510,Leeds,3207000.0,Masonry,Low,1908
+POL-000511,Manchester,2746000.0,Steel Frame,Low,1959
+POL-000512,Manchester,3921000.0,Masonry,Medium,1975
+POL-000513,Birmingham,624000.0,Steel Frame,High,1986
+POL-000514,Manchester,3829000.0,Steel Frame,Medium,1913
+POL-000515,London,2752000.0,Timber Frame,Medium,1996
+POL-000516,Glasgow,4819000.0,Masonry,Low,1917
+POL-000517,Glasgow,1775000.0,Masonry,Low,2012
+POL-000518,Leeds,3200000.0,Masonry,Low,2022
+POL-000519,Manchester,4667000.0,Masonry,Low,2004
+POL-000520,London,602000.0,Steel Frame,Low,1972
+POL-000521,Leeds,4692000.0,Reinforced Concrete,Low,1922
+POL-000522,Birmingham,3471000.0,Steel Frame,Low,1973
+POL-000523,Leeds,432000.0,Steel Frame,Low,1982
+POL-000524,Leeds,1575000.0,Steel Frame,Medium,1946
+POL-000525,Manchester,3570000.0,Steel Frame,Medium,1968
+POL-000526,Birmingham,430000.0,Masonry,Low,1946
+POL-000527,Leeds,2953000.0,Reinforced Concrete,High,2015
+POL-000528,London,1795000.0,Steel Frame,Very High,1986
+POL-000529,London,3142000.0,Timber Frame,Low,1929
+POL-000530,Glasgow,324000.0,Masonry,Low,1924
+POL-000531,Birmingham,4371000.0,Timber Frame,Low,1927
+POL-000532,Birmingham,4870000.0,Timber Frame,High,1997
+POL-000533,Glasgow,4848000.0,Steel Frame,High,2008
+POL-000534,Leeds,3773000.0,Timber Frame,Low,2019
+POL-000535,Birmingham,737000.0,Masonry,Low,2011
+POL-000536,London,3815000.0,Reinforced Concrete,Low,2010
+POL-000537,London,220000.0,Masonry,Low,1924
+POL-000538,Manchester,208000.0,Timber Frame,Low,1973
+POL-000539,Birmingham,1686000.0,Masonry,High,1977
+POL-000540,Leeds,2494000.0,Steel Frame,Medium,2005
+POL-000541,Glasgow,3875000.0,Reinforced Concrete,Medium,2020
+POL-000542,Glasgow,3448000.0,Masonry,High,2009
+POL-000543,Leeds,2285000.0,Steel Frame,Medium,1957
+POL-000544,Bristol,1441000.0,Masonry,Low,1993
+POL-000545,Manchester,4986000.0,Reinforced Concrete,Medium,2018
+POL-000546,Glasgow,2188000.0,Steel Frame,Low,1940
+POL-000547,Birmingham,2312000.0,Steel Frame,Medium,1924
+POL-000548,Manchester,902000.0,Masonry,Low,1977
+POL-000549,Birmingham,3995000.0,Reinforced Concrete,Medium,1998
+POL-000550,London,3499000.0,Steel Frame,Low,2015
+POL-000551,Manchester,1182000.0,Masonry,Low,1947
+POL-000552,Glasgow,504000.0,Steel Frame,Low,1997
+POL-000553,Manchester,3434000.0,Masonry,Low,1909
+POL-000554,Manchester,3307000.0,Steel Frame,Medium,1998
+POL-000555,Manchester,1439000.0,Masonry,Medium,1974
+POL-000556,Bristol,4759000.0,Steel Frame,Low,1910
+POL-000557,Manchester,840000.0,Timber Frame,Low,1984
+POL-000558,Birmingham,2218000.0,Masonry,Low,1920
+POL-000559,London,4724000.0,Masonry,Low,1985
+POL-000560,Leeds,2157000.0,Masonry,Low,1944
+POL-000561,Manchester,3229000.0,Timber Frame,High,1906
+POL-000562,Glasgow,2048000.0,Masonry,Low,2018
+POL-000563,Manchester,1444000.0,Timber Frame,Low,1980
+POL-000564,Glasgow,4921000.0,Masonry,Low,1963
+POL-000565,Birmingham,2106000.0,Masonry,Low,1963
+POL-000566,Glasgow,4481000.0,Steel Frame,Low,1901
+POL-000567,Leeds,1227000.0,Masonry,Medium,1975
+POL-000568,London,1144000.0,Reinforced Concrete,Low,2020
+POL-000569,Glasgow,253000.0,Steel Frame,Low,1941
+POL-000570,Glasgow,3293000.0,Steel Frame,Low,1981
+POL-000571,London,1906000.0,Timber Frame,Low,1953
+POL-000572,Leeds,4335000.0,Steel Frame,Low,2022
+POL-000573,Manchester,2419000.0,Masonry,Very High,1974
+POL-000574,Glasgow,4844000.0,Masonry,Medium,1915
+POL-000575,London,1009000.0,Masonry,Low,2012
+POL-000576,Birmingham,4356000.0,Steel Frame,Low,2014
+POL-000577,London,3905000.0,Masonry,Low,1917
+POL-000578,Birmingham,3878000.0,Timber Frame,Low,1998
+POL-000579,Leeds,4239000.0,Reinforced Concrete,Medium,2016
+POL-000580,Manchester,3829000.0,Steel Frame,Medium,1958
+POL-000581,London,3168000.0,Timber Frame,Low,1989
+POL-000582,Bristol,743000.0,Masonry,Low,1915
+POL-000583,Glasgow,259000.0,Steel Frame,Low,1905
+POL-000584,Leeds,4612000.0,Timber Frame,High,1956
+POL-000585,London,3122000.0,Masonry,Medium,2007
+POL-000586,Glasgow,4003000.0,Masonry,Low,2006
+POL-000587,London,2459000.0,Reinforced Concrete,Low,1946
+POL-000588,Birmingham,675000.0,Steel Frame,Medium,2010
+POL-000589,London,713000.0,Steel Frame,Low,1947
+POL-000590,Bristol,3459000.0,Steel Frame,Low,1941
+POL-000591,London,2208000.0,Timber Frame,Low,1975
+POL-000592,London,1083000.0,Timber Frame,Medium,1959
+POL-000593,Bristol,2509000.0,Timber Frame,Low,1976
+POL-000594,Leeds,415000.0,Masonry,Low,1903
+POL-000595,London,2952000.0,Timber Frame,High,2002
+POL-000596,Bristol,1418000.0,Steel Frame,Low,2017
+POL-000597,Glasgow,4008000.0,Steel Frame,Low,1901
+POL-000598,Birmingham,1621000.0,Steel Frame,Low,1989
+POL-000599,Birmingham,2331000.0,Timber Frame,Low,1958
+POL-000600,London,157000.0,Steel Frame,Medium,1926
+POL-000601,Leeds,455000.0,Steel Frame,Low,1926
+POL-000602,Leeds,2023000.0,Timber Frame,Low,1978
+POL-000603,Glasgow,2452000.0,Steel Frame,Low,1971
+POL-000604,London,3040000.0,Masonry,Medium,1906
+POL-000605,Birmingham,1529000.0,Timber Frame,Medium,1962
+POL-000606,Leeds,3505000.0,Masonry,Low,2010
+POL-000607,London,4315000.0,Masonry,Low,2018
+POL-000608,Leeds,3921000.0,Timber Frame,Medium,1945
+POL-000609,Bristol,294000.0,Steel Frame,Low,1962
+POL-000610,Leeds,2454000.0,Reinforced Concrete,Medium,2003
+POL-000611,Birmingham,614000.0,Steel Frame,Medium,2023
+POL-000612,Manchester,1286000.0,Steel Frame,Medium,1911
+POL-000613,Glasgow,4935000.0,Timber Frame,Low,1912
+POL-000614,Glasgow,798000.0,Steel Frame,Low,1942
+POL-000615,Birmingham,2545000.0,Masonry,Medium,1916
+POL-000616,Leeds,3129000.0,Masonry,Low,1962
+POL-000617,London,3542000.0,Masonry,Low,1980
+POL-000618,Leeds,2842000.0,Timber Frame,High,2019
+POL-000619,Birmingham,148000.0,Masonry,High,1935
+POL-000620,Glasgow,1700000.0,Masonry,Low,1984
+POL-000621,Leeds,2637000.0,Masonry,Low,1907
+POL-000622,Glasgow,531000.0,Reinforced Concrete,Low,1968
+POL-000623,London,1818000.0,Masonry,Medium,1989
+POL-000624,Glasgow,263000.0,Timber Frame,High,1979
+POL-000625,Glasgow,485000.0,Masonry,Low,1935
+POL-000626,Manchester,2045000.0,Steel Frame,Low,1927
+POL-000627,Manchester,750000.0,Masonry,High,2017
+POL-000628,Bristol,2881000.0,Masonry,Low,1992
+POL-000629,Manchester,3478000.0,Timber Frame,Low,1946
+POL-000630,Glasgow,4023000.0,Masonry,Very High,1975
+POL-000631,Birmingham,1081000.0,Masonry,Low,2000
+POL-000632,Glasgow,921000.0,Masonry,Medium,1929
+POL-000633,Birmingham,612000.0,Masonry,Low,1922
+POL-000634,Birmingham,3219000.0,Masonry,Low,1915
+POL-000635,Manchester,3562000.0,Masonry,Medium,1913
+POL-000636,Leeds,255000.0,Steel Frame,Low,1973
+POL-000637,London,4687000.0,Timber Frame,Very High,1970
+POL-000638,Manchester,355000.0,Timber Frame,Low,2008
+POL-000639,Manchester,2752000.0,Masonry,Low,1951
+POL-000640,Leeds,3574000.0,Reinforced Concrete,Low,2023
+POL-000641,London,4368000.0,Masonry,Low,1936
+POL-000642,Glasgow,3599000.0,Masonry,Low,1928
+POL-000643,Bristol,4028000.0,Steel Frame,Low,1966
+POL-000644,Bristol,1763000.0,Masonry,Low,1914
+POL-000645,Glasgow,4093000.0,Masonry,Low,1999
+POL-000646,Manchester,493000.0,Timber Frame,Medium,1946
+POL-000647,London,4485000.0,Steel Frame,Medium,1945
+POL-000648,Manchester,2783000.0,Timber Frame,Medium,1951
+POL-000649,Birmingham,4105000.0,Steel Frame,Low,1918
+POL-000650,Manchester,2316000.0,Reinforced Concrete,Low,1976
+POL-000651,Manchester,3254000.0,Masonry,Medium,2005
+POL-000652,Glasgow,2679000.0,Masonry,Low,1920
+POL-000653,Glasgow,3685000.0,Masonry,Low,1963
+POL-000654,Glasgow,500000.0,Timber Frame,Medium,1936
+POL-000655,Bristol,396000.0,Timber Frame,Medium,1926
+POL-000656,Birmingham,1311000.0,Reinforced Concrete,Low,1954
+POL-000657,Glasgow,882000.0,Steel Frame,Low,2015
+POL-000658,London,4372000.0,Steel Frame,Medium,1928
+POL-000659,Bristol,1174000.0,Masonry,Low,1919
+POL-000660,Leeds,4882000.0,Steel Frame,Medium,1924
+POL-000661,London,1751000.0,Reinforced Concrete,Medium,1969
+POL-000662,London,992000.0,Steel Frame,Medium,1962
+POL-000663,Glasgow,3970000.0,Masonry,Low,1935
+POL-000664,Leeds,3328000.0,Steel Frame,Low,1901
+POL-000665,Leeds,2541000.0,Masonry,Medium,1921
+POL-000666,Bristol,2821000.0,Masonry,Medium,1995
+POL-000667,Leeds,3624000.0,Masonry,Medium,1915
+POL-000668,Birmingham,1219000.0,Steel Frame,Low,1917
+POL-000669,Glasgow,4982000.0,Steel Frame,Low,1968
+POL-000670,Leeds,4876000.0,Masonry,High,1953
+POL-000671,Bristol,3287000.0,Masonry,Medium,1999
+POL-000672,Birmingham,1078000.0,Timber Frame,High,1929
+POL-000673,Manchester,3433000.0,Masonry,Medium,1944
+POL-000674,Manchester,454000.0,Masonry,Low,1918
+POL-000675,Birmingham,250000.0,Timber Frame,Medium,1986
+POL-000676,Bristol,1363000.0,Steel Frame,High,1933
+POL-000677,Birmingham,2367000.0,Masonry,Low,1912
+POL-000678,Glasgow,4355000.0,Masonry,Medium,1942
+POL-000679,Glasgow,3663000.0,Masonry,Low,1961
+POL-000680,Manchester,3739000.0,Reinforced Concrete,Low,2017
+POL-000681,Leeds,2185000.0,Steel Frame,Medium,1992
+POL-000682,Bristol,1795000.0,Steel Frame,Low,1999
+POL-000683,Manchester,1918000.0,Masonry,Low,1921
+POL-000684,Leeds,4939000.0,Timber Frame,Low,1951
+POL-000685,Leeds,297000.0,Masonry,Low,1951
+POL-000686,Glasgow,4348000.0,Steel Frame,Low,2010
+POL-000687,London,2936000.0,Reinforced Concrete,Low,1935
+POL-000688,London,2249000.0,Steel Frame,High,1972
+POL-000689,Birmingham,3654000.0,Steel Frame,Low,2002
+POL-000690,Glasgow,2485000.0,Steel Frame,Low,2014
+POL-000691,Leeds,4380000.0,Masonry,Low,1918
+POL-000692,Bristol,4513000.0,Reinforced Concrete,Medium,1937
+POL-000693,London,2166000.0,Masonry,Low,1969
+POL-000694,Leeds,1456000.0,Timber Frame,Medium,2015
+POL-000695,London,3003000.0,Masonry,Medium,2010
+POL-000696,London,4571000.0,Masonry,Medium,1978
+POL-000697,London,1132000.0,Timber Frame,Low,1956
+POL-000698,Bristol,3153000.0,Masonry,Medium,1919
+POL-000699,Glasgow,3195000.0,Timber Frame,Low,1908
+POL-000700,Bristol,3692000.0,Timber Frame,High,1931
+POL-000701,Manchester,745000.0,Masonry,Medium,1903
+POL-000702,Leeds,3608000.0,Masonry,Low,1949
+POL-000703,Glasgow,4554000.0,Timber Frame,Low,1981
+POL-000704,Glasgow,980000.0,Masonry,Low,1904
+POL-000705,Glasgow,1264000.0,Steel Frame,Medium,1919
+POL-000706,Glasgow,4860000.0,Steel Frame,Low,1986
+POL-000707,Bristol,987000.0,Steel Frame,Low,1974
+POL-000708,Glasgow,4286000.0,Steel Frame,Low,1936
+POL-000709,Birmingham,2512000.0,Timber Frame,Medium,1921
+POL-000710,Leeds,1311000.0,Steel Frame,Medium,1957
+POL-000711,Glasgow,4367000.0,Masonry,Medium,1967
+POL-000712,Leeds,2282000.0,Masonry,Medium,1992
+POL-000713,Birmingham,2623000.0,Steel Frame,Low,1943
+POL-000714,Birmingham,1860000.0,Timber Frame,Low,1933
+POL-000715,Leeds,3005000.0,Steel Frame,Medium,1976
+POL-000716,London,901000.0,Steel Frame,Low,1941
+POL-000717,Manchester,2016000.0,Steel Frame,Low,1908
+POL-000718,London,4850000.0,Reinforced Concrete,Low,2005
+POL-000719,London,1365000.0,Timber Frame,Low,1994
+POL-000720,Bristol,3318000.0,Masonry,Low,1906
+POL-000721,London,1693000.0,Timber Frame,High,1967
+POL-000722,Glasgow,3890000.0,Masonry,Low,1918
+POL-000723,Bristol,741000.0,Steel Frame,Low,2005
+POL-000724,Bristol,4852000.0,Steel Frame,Low,1993
+POL-000725,Birmingham,2324000.0,Steel Frame,Medium,1930
+POL-000726,London,1257000.0,Masonry,Low,1934
+POL-000727,Birmingham,460000.0,Masonry,High,1956
+POL-000728,Leeds,932000.0,Timber Frame,High,1984
+POL-000729,Manchester,2647000.0,Masonry,Low,1960
+POL-000730,Bristol,1751000.0,Steel Frame,High,1930
+POL-000731,Leeds,4162000.0,Masonry,Very High,1982
+POL-000732,Leeds,2211000.0,Masonry,Medium,1994
+POL-000733,Glasgow,1319000.0,Masonry,Medium,1952
+POL-000734,Manchester,3124000.0,Steel Frame,Low,1931
+POL-000735,Leeds,3563000.0,Steel Frame,Low,1965
+POL-000736,Leeds,919000.0,Masonry,Low,1958
+POL-000737,Manchester,921000.0,Masonry,Low,2015
+POL-000738,Manchester,280000.0,Timber Frame,Very High,1909
+POL-000739,Leeds,3708000.0,Masonry,Low,1901
+POL-000740,Manchester,3353000.0,Steel Frame,Medium,1965
+POL-000741,Leeds,2426000.0,Steel Frame,Medium,1959
+POL-000742,Leeds,4236000.0,Masonry,High,1987
+POL-000743,Glasgow,4048000.0,Masonry,Very High,1916
+POL-000744,London,2968000.0,Reinforced Concrete,Low,1995
+POL-000745,Leeds,4355000.0,Timber Frame,Low,1915
+POL-000746,Birmingham,1109000.0,Steel Frame,Low,1915
+POL-000747,Bristol,648000.0,Masonry,Low,1945
+POL-000748,London,1422000.0,Timber Frame,Low,1938
+POL-000749,London,380000.0,Masonry,Low,2016
+POL-000750,London,2703000.0,Timber Frame,Medium,1930
+POL-000751,Glasgow,4689000.0,Reinforced Concrete,Low,2006
+POL-000752,Leeds,293000.0,Masonry,Low,1987
+POL-000753,Glasgow,698000.0,Masonry,Medium,1900
+POL-000754,Leeds,2316000.0,Masonry,Low,1910
+POL-000755,Glasgow,4676000.0,Masonry,Low,2018
+POL-000756,Glasgow,1649000.0,Masonry,Medium,1984
+POL-000757,Bristol,2585000.0,Masonry,Medium,1903
+POL-000758,Birmingham,304000.0,Steel Frame,Medium,1970
+POL-000759,Glasgow,827000.0,Timber Frame,Low,1925
+POL-000760,Bristol,4934000.0,Masonry,Medium,2010
+POL-000761,Manchester,4829000.0,Reinforced Concrete,Medium,1949
+POL-000762,Birmingham,124000.0,Masonry,Low,1911
+POL-000763,Glasgow,4764000.0,Reinforced Concrete,Medium,1994
+POL-000764,London,3232000.0,Masonry,High,1980
+POL-000765,Manchester,4353000.0,Steel Frame,Low,1996
+POL-000766,Manchester,2328000.0,Steel Frame,Low,1974
+POL-000767,Bristol,2626000.0,Steel Frame,Very High,1991
+POL-000768,Manchester,2495000.0,Reinforced Concrete,Medium,1995
+POL-000769,Birmingham,3368000.0,Masonry,Low,1964
+POL-000770,Glasgow,784000.0,Reinforced Concrete,Medium,1946
+POL-000771,Glasgow,247000.0,Masonry,Low,1991
+POL-000772,London,1609000.0,Masonry,Low,1952
+POL-000773,Bristol,3553000.0,Masonry,Low,2005
+POL-000774,London,1089000.0,Timber Frame,High,1970
+POL-000775,Manchester,3400000.0,Masonry,High,1901
+POL-000776,London,4853000.0,Timber Frame,Low,2005
+POL-000777,Birmingham,560000.0,Timber Frame,Low,1923
+POL-000778,Glasgow,3396000.0,Steel Frame,Low,1903
+POL-000779,Manchester,2274000.0,Steel Frame,Very High,2007
+POL-000780,London,4354000.0,Timber Frame,Very High,1918
+POL-000781,Bristol,968000.0,Masonry,Medium,1925
+POL-000782,Birmingham,3494000.0,Masonry,Medium,1974
+POL-000783,Birmingham,4207000.0,Masonry,Medium,1939
+POL-000784,London,4729000.0,Masonry,Low,1949
+POL-000785,Glasgow,3448000.0,Masonry,Low,1942
+POL-000786,London,2536000.0,Masonry,Low,1974
+POL-000787,Manchester,3127000.0,Reinforced Concrete,Medium,2008
+POL-000788,London,4358000.0,Timber Frame,Medium,1966
+POL-000789,Birmingham,2896000.0,Masonry,Low,1911
+POL-000790,London,249000.0,Timber Frame,High,1966
+POL-000791,Glasgow,4662000.0,Masonry,Low,2005
+POL-000792,Bristol,3479000.0,Timber Frame,Low,1926
+POL-000793,Leeds,3415000.0,Steel Frame,Medium,2012
+POL-000794,London,1157000.0,Timber Frame,Medium,1953
+POL-000795,Glasgow,3329000.0,Timber Frame,Medium,1965
+POL-000796,Glasgow,2030000.0,Reinforced Concrete,Low,1948
+POL-000797,Bristol,3291000.0,Steel Frame,Low,1915
+POL-000798,Birmingham,622000.0,Steel Frame,Medium,1901
+POL-000799,Glasgow,3323000.0,Timber Frame,Low,1959
+POL-000800,Glasgow,4997000.0,Steel Frame,Low,1953
+POL-000801,Glasgow,336000.0,Masonry,Medium,1929
+POL-000802,Glasgow,4888000.0,Masonry,Low,1983
+POL-000803,Manchester,2094000.0,Masonry,Medium,1937
+POL-000804,Manchester,4367000.0,Timber Frame,Medium,1927
+POL-000805,Birmingham,3934000.0,Timber Frame,Low,1924
+POL-000806,London,2878000.0,Masonry,Low,1995
+POL-000807,Glasgow,3718000.0,Reinforced Concrete,Medium,1909
+POL-000808,Bristol,4405000.0,Reinforced Concrete,Medium,1959
+POL-000809,London,2080000.0,Steel Frame,Medium,1941
+POL-000810,Bristol,1702000.0,Timber Frame,Medium,1939
+POL-000811,London,3371000.0,Steel Frame,Medium,1996
+POL-000812,Birmingham,4058000.0,Masonry,Very High,1976
+POL-000813,Glasgow,3835000.0,Steel Frame,Low,2019
+POL-000814,Glasgow,4009000.0,Masonry,Low,2004
+POL-000815,Leeds,2234000.0,Steel Frame,Low,2017
+POL-000816,Bristol,4107000.0,Masonry,Low,1941
+POL-000817,London,689000.0,Steel Frame,Low,1946
+POL-000818,London,2768000.0,Reinforced Concrete,Low,1936
+POL-000819,Manchester,128000.0,Masonry,High,2017
+POL-000820,Leeds,1690000.0,Timber Frame,Low,1979
+POL-000821,Manchester,1896000.0,Reinforced Concrete,Low,2008
+POL-000822,Manchester,2041000.0,Timber Frame,Low,1921
+POL-000823,Manchester,3508000.0,Steel Frame,Low,1956
+POL-000824,Bristol,2004000.0,Timber Frame,Low,1983
+POL-000825,Bristol,2299000.0,Masonry,Low,2013
+POL-000826,Birmingham,1264000.0,Masonry,Low,2006
+POL-000827,Birmingham,1929000.0,Masonry,Medium,1926
+POL-000828,Manchester,1214000.0,Steel Frame,High,1940
+POL-000829,Leeds,459000.0,Masonry,High,1979
+POL-000830,London,3057000.0,Timber Frame,Medium,1933
+POL-000831,Bristol,3374000.0,Timber Frame,Low,1931
+POL-000832,Leeds,3136000.0,Timber Frame,High,1989
+POL-000833,Glasgow,2371000.0,Steel Frame,High,1988
+POL-000834,Bristol,1961000.0,Reinforced Concrete,Low,1965
+POL-000835,Bristol,4330000.0,Timber Frame,Medium,1911
+POL-000836,Birmingham,2644000.0,Steel Frame,Low,1939
+POL-000837,London,2448000.0,Steel Frame,Medium,1972
+POL-000838,London,226000.0,Timber Frame,Very High,1975
+POL-000839,Glasgow,1772000.0,Reinforced Concrete,Low,1989
+POL-000840,Glasgow,1963000.0,Masonry,High,1972
+POL-000841,Bristol,2054000.0,Masonry,Medium,1909
+POL-000842,Manchester,2943000.0,Steel Frame,Very High,1995
+POL-000843,Birmingham,2715000.0,Timber Frame,Low,2020
+POL-000844,Birmingham,3079000.0,Steel Frame,Medium,1997
+POL-000845,Bristol,3848000.0,Steel Frame,Low,1947
+POL-000846,Leeds,4084000.0,Masonry,Low,1919
+POL-000847,Manchester,3619000.0,Steel Frame,Low,1938
+POL-000848,Bristol,4782000.0,Timber Frame,Very High,1959
+POL-000849,Manchester,189000.0,Timber Frame,Medium,1965
+POL-000850,Manchester,1059000.0,Steel Frame,High,1964
+POL-000851,Manchester,137000.0,Reinforced Concrete,High,1950
+POL-000852,Bristol,3273000.0,Masonry,Low,2023
+POL-000853,Birmingham,4500000.0,Timber Frame,Low,1935
+POL-000854,Birmingham,1293000.0,Steel Frame,Low,1923
+POL-000855,Manchester,4642000.0,Steel Frame,Low,2017
+POL-000856,Leeds,395000.0,Steel Frame,Low,1926
+POL-000857,London,4679000.0,Masonry,Low,1901
+POL-000858,Bristol,1823000.0,Masonry,Low,1930
+POL-000859,London,597000.0,Masonry,Low,1956
+POL-000860,Leeds,2481000.0,Steel Frame,Low,1977
+POL-000861,Bristol,1358000.0,Masonry,Low,1965
+POL-000862,Manchester,1496000.0,Masonry,Very High,1928
+POL-000863,Birmingham,1606000.0,Reinforced Concrete,Medium,1914
+POL-000864,London,4035000.0,Masonry,Very High,1911
+POL-000865,Glasgow,2742000.0,Reinforced Concrete,Low,2000
+POL-000866,Glasgow,1625000.0,Steel Frame,Low,1927
+POL-000867,Leeds,3091000.0,Steel Frame,Medium,1983
+POL-000868,Manchester,3609000.0,Masonry,Low,2002
+POL-000869,London,1436000.0,Masonry,Low,1923
+POL-000870,Manchester,2126000.0,Steel Frame,Low,1920
+POL-000871,London,697000.0,Steel Frame,Low,1909
+POL-000872,Leeds,988000.0,Steel Frame,Low,2009
+POL-000873,Leeds,3437000.0,Masonry,Low,1977
+POL-000874,Glasgow,989000.0,Steel Frame,Medium,2000
+POL-000875,Manchester,2673000.0,Steel Frame,Low,1917
+POL-000876,Bristol,3574000.0,Steel Frame,Low,1987
+POL-000877,Glasgow,624000.0,Steel Frame,Medium,1913
+POL-000878,Manchester,2880000.0,Steel Frame,Low,1933
+POL-000879,Glasgow,1357000.0,Steel Frame,Low,1957
+POL-000880,Bristol,4818000.0,Masonry,High,1975
+POL-000881,Birmingham,2469000.0,Timber Frame,Low,1921
+POL-000882,Birmingham,4049000.0,Masonry,Low,2019
+POL-000883,Birmingham,2796000.0,Timber Frame,Low,1969
+POL-000884,Birmingham,313000.0,Timber Frame,Low,1935
+POL-000885,London,3202000.0,Masonry,Low,1944
+POL-000886,Birmingham,4762000.0,Masonry,Medium,1935
+POL-000887,Bristol,3048000.0,Masonry,Low,1921
+POL-000888,Leeds,4114000.0,Steel Frame,Low,1977
+POL-000889,Leeds,4433000.0,Reinforced Concrete,Low,1979
+POL-000890,London,1218000.0,Masonry,Low,1960
+POL-000891,Birmingham,1139000.0,Reinforced Concrete,Medium,1999
+POL-000892,Birmingham,3094000.0,Timber Frame,Low,1955
+POL-000893,Birmingham,2114000.0,Masonry,Low,1988
+POL-000894,Glasgow,4215000.0,Masonry,Low,1995
+POL-000895,Manchester,4510000.0,Timber Frame,Low,1932
+POL-000896,Glasgow,1832000.0,Steel Frame,Low,1944
+POL-000897,Manchester,1261000.0,Steel Frame,Medium,1935
+POL-000898,Birmingham,3925000.0,Masonry,Low,1919
+POL-000899,Birmingham,1447000.0,Masonry,Low,1917
+POL-000900,Glasgow,4131000.0,Timber Frame,Low,1937
+POL-000901,Glasgow,2176000.0,Masonry,Medium,1966
+POL-000902,Manchester,3371000.0,Masonry,Low,1922
+POL-000903,Leeds,568000.0,Masonry,Medium,1995
+POL-000904,Manchester,3157000.0,Steel Frame,Medium,2008
+POL-000905,Glasgow,2314000.0,Reinforced Concrete,High,2022
+POL-000906,Bristol,2974000.0,Timber Frame,Low,1915
+POL-000907,Glasgow,923000.0,Reinforced Concrete,Low,1958
+POL-000908,Bristol,3711000.0,Masonry,Medium,1968
+POL-000909,London,4328000.0,Timber Frame,Very High,1967
+POL-000910,Glasgow,1162000.0,Masonry,High,1920
+POL-000911,London,569000.0,Steel Frame,Low,2003
+POL-000912,Leeds,216000.0,Reinforced Concrete,Low,2014
+POL-000913,Manchester,3246000.0,Steel Frame,Low,1977
+POL-000914,Bristol,3075000.0,Masonry,Medium,2002
+POL-000915,Manchester,2779000.0,Steel Frame,Low,1994
+POL-000916,London,1237000.0,Masonry,Low,1977
+POL-000917,Bristol,2015000.0,Steel Frame,Medium,1969
+POL-000918,Manchester,3013000.0,Timber Frame,Low,1911
+POL-000919,Glasgow,2534000.0,Timber Frame,High,1915
+POL-000920,Birmingham,4940000.0,Timber Frame,Low,1980
+POL-000921,London,769000.0,Steel Frame,Low,2008
+POL-000922,Manchester,3506000.0,Masonry,Low,1986
+POL-000923,London,2081000.0,Steel Frame,Medium,1913
+POL-000924,London,2198000.0,Masonry,Low,1960
+POL-000925,Bristol,3616000.0,Steel Frame,Low,1970
+POL-000926,Bristol,3493000.0,Steel Frame,Very High,1945
+POL-000927,Birmingham,4957000.0,Steel Frame,Low,1931
+POL-000928,Glasgow,729000.0,Timber Frame,Low,1914
+POL-000929,London,610000.0,Timber Frame,Low,1943
+POL-000930,Manchester,3649000.0,Masonry,Low,1916
+POL-000931,Leeds,2934000.0,Steel Frame,Medium,1940
+POL-000932,London,1443000.0,Masonry,Low,1953
+POL-000933,London,489000.0,Timber Frame,Low,2010
+POL-000934,Birmingham,520000.0,Masonry,Low,1943
+POL-000935,Glasgow,4482000.0,Masonry,Medium,1997
+POL-000936,Leeds,1040000.0,Steel Frame,Low,1904
+POL-000937,Bristol,1685000.0,Masonry,Low,2008
+POL-000938,Bristol,1211000.0,Steel Frame,Low,1926
+POL-000939,Manchester,1839000.0,Masonry,Low,2015
+POL-000940,Leeds,440000.0,Masonry,Low,1986
+POL-000941,Bristol,2643000.0,Timber Frame,Low,2003
+POL-000942,Manchester,431000.0,Masonry,Medium,2022
+POL-000943,Glasgow,4022000.0,Masonry,Low,1977
+POL-000944,Manchester,1245000.0,Steel Frame,High,1978
+POL-000945,Bristol,2746000.0,Masonry,Very High,1942
+POL-000946,Birmingham,4412000.0,Steel Frame,Low,1996
+POL-000947,Birmingham,3289000.0,Masonry,Low,2016
+POL-000948,Birmingham,2711000.0,Masonry,Low,1930
+POL-000949,Bristol,1689000.0,Steel Frame,Medium,1998
+POL-000950,Birmingham,1732000.0,Masonry,Low,1916
+POL-000951,Leeds,3380000.0,Masonry,Low,1991
+POL-000952,Glasgow,4971000.0,Masonry,Low,1982
+POL-000953,Manchester,3343000.0,Masonry,Medium,2009
+POL-000954,Manchester,2833000.0,Steel Frame,Medium,1953
+POL-000955,Bristol,3680000.0,Masonry,Low,1961
+POL-000956,Birmingham,2380000.0,Steel Frame,Medium,1986
+POL-000957,Birmingham,395000.0,Steel Frame,Low,1931
+POL-000958,London,2855000.0,Timber Frame,Low,1939
+POL-000959,Glasgow,4792000.0,Reinforced Concrete,High,1912
+POL-000960,Leeds,959000.0,Masonry,Low,2022
+POL-000961,Manchester,3481000.0,Reinforced Concrete,Low,1983
+POL-000962,London,1085000.0,Masonry,Low,1934
+POL-000963,London,2726000.0,Steel Frame,High,1904
+POL-000964,Bristol,574000.0,Timber Frame,Medium,1972
+POL-000965,Manchester,2307000.0,Masonry,Medium,1928
+POL-000966,Bristol,3805000.0,Steel Frame,Medium,1969
+POL-000967,Leeds,1803000.0,Steel Frame,Low,1924
+POL-000968,London,3358000.0,Masonry,Low,1994
+POL-000969,London,3998000.0,Masonry,Low,1921
+POL-000970,Glasgow,4643000.0,Steel Frame,Low,1965
+POL-000971,Leeds,1250000.0,Steel Frame,Low,1944
+POL-000972,London,2057000.0,Reinforced Concrete,High,1968
+POL-000973,Leeds,847000.0,Steel Frame,Low,2023
+POL-000974,Manchester,4963000.0,Reinforced Concrete,Low,1990
+POL-000975,Birmingham,4642000.0,Steel Frame,Low,1988
+POL-000976,London,2746000.0,Masonry,Low,1971
+POL-000977,Glasgow,4226000.0,Masonry,High,2018
+POL-000978,Manchester,2653000.0,Steel Frame,Low,1900
+POL-000979,Leeds,3156000.0,Steel Frame,Low,1983
+POL-000980,Bristol,537000.0,Masonry,Medium,1943
+POL-000981,Manchester,3801000.0,Masonry,Low,1986
+POL-000982,London,726000.0,Reinforced Concrete,Low,1995
+POL-000983,Leeds,4148000.0,Timber Frame,Low,1974
+POL-000984,Birmingham,3932000.0,Timber Frame,Low,1938
+POL-000985,Manchester,3573000.0,Timber Frame,Very High,2010
+POL-000986,London,277000.0,Masonry,Medium,1953
+POL-000987,Glasgow,1585000.0,Masonry,Low,1987
+POL-000988,Bristol,1389000.0,Masonry,Medium,1974
+POL-000989,Leeds,1865000.0,Masonry,Low,1928
+POL-000990,Manchester,529000.0,Steel Frame,Low,1953
+POL-000991,Manchester,4691000.0,Timber Frame,Low,1989
+POL-000992,Birmingham,2814000.0,Steel Frame,Low,1915
+POL-000993,Birmingham,1597000.0,Steel Frame,Low,1998
+POL-000994,Glasgow,2045000.0,Masonry,Medium,1919
+POL-000995,Bristol,2291000.0,Steel Frame,High,1945
+POL-000996,Glasgow,3043000.0,Timber Frame,Low,1966
+POL-000997,London,2627000.0,Steel Frame,Low,1964
+POL-000998,London,4605000.0,Masonry,Low,1957
+POL-000999,Glasgow,2535000.0,Steel Frame,Low,1952

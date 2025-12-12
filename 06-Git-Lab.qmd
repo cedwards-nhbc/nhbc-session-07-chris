@@ -1,0 +1,210 @@
+---
+title: "Lab 7.2: Git for the Individual"
+subtitle: "Building your own Audit Trail"
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: false
+---
+
+# Introduction
+
+Before we learn how to handle *conflicts* with other people (Session 8), we must master using Git for *ourselves*.
+
+In this lab, you will take the code you wrote today (the Shiny App and the AI Lab) and put it into a brand new GitHub repository.
+
+# Exercise 1: The Initial Push
+
+You have a folder on your laptop with your work. You want it on GitHub.
+
+## 1.1 Create the Repo
+
+1.  Log in to [GitHub](https://github.com).
+2.  Click the **+** icon (top right) -> **New repository**.
+3.  Name it: `nhbc-session-07-{yourname}` (e.g., `nhbc-session-07-allan`).
+4.  **Important**: Do NOT check "Add a README", "Add .gitignore", or "Add a license". valid
+    *   We want an *empty* repo so we can push our existing code into it.
+5.  Click **Create repository**.
+
+## 1.2 Initialize Locally
+
+Open your terminal (VS Code: Terminal -> New Terminal) and navigate to your Session 7 folder.
+
+We will use `uv` to initialize the project. This automatically creates a git repo and a `.gitignore` file for us.
+
+```bash
+# Initialize a new project (creates .gitignore, pyproject.toml, and .git)
+uv init
+
+# Add the libraries we need for Session 7
+uv add shiny shinywidgets polars pandas numpy plotly scipy chainladder matplotlib jupyter openai
+```
+
+*Note: `uv init` assumes you are starting a new project. If you already have files, it will wrap them nicely.*
+
+## 1.3 The First Commit
+
+```bash
+# stage all files (including the new pyproject.toml and uv.lock)
+git add .
+
+# commit them to the history
+git commit -m "Initial commit: Project setup with uv"
+```
+
+## 1.4 Connect to GitHub
+
+Look at the GitHub page you just created. It shows you the commands to run. They will look something like this:
+
+```bash
+# Link your local folder to the cloud repo
+git remote add origin https://github.com/YOUR_USERNAME/nhbc-session-07-NAME.git
+
+# Push the files up
+git push -u origin main
+```
+
+*Note: If you are asked for a password, use your GitHub Personal Access Token.*
+
+**Check**: Refresh the GitHub page. You should see your code!
+
+# Exercise 2: The Branching Workflow
+
+NEVER commit directly to `main`. It is a bad habit. Always use a branch.
+
+**Best Practice**: Create a new branch for each distinct piece of work. For example, if you are doing the `02-Exercises.qmd` notebook, call the branch `exercises/session-02`. If you are working on the AI Challenge, call it `feat/ai-challenge`.
+
+## 2.1 Create a Branch
+
+We want to make a small change to the App.
+
+```bash
+# Create a branch called 'feat/app-update' and switch to it
+git checkout -b feat/app-update
+```
+
+## 2.2 Make a Change
+
+1.  Open `App-Starter/app.py` (or your solution file).
+2.  Change the title in `ui.page_fluid` to include your name.
+    *   e.g., `ui.h2("Allan's Interactive Reserving")`
+3.  Save the file.
+
+## 2.3 Commit and Push
+
+```bash
+# Check what changed
+git status
+
+# Stage the file
+git add App-Starter/app.py
+
+# Commit
+git commit -m "Update app title to be personalized"
+
+# Push the branch to GitHub
+git push -u origin feat/app-update
+```
+
+# Exercise 3: The Pull Request
+
+## 3.1 Open the PR
+
+1.  Go to your GitHub repo page in the browser.
+2.  You should see a yellow banner: **"feat/app-update had recent pushes..."**. Click **Compare & pull request**.
+3.  **Title**: "Update App Title".
+4.  **Description**: "Personalized the application header."
+5.  Click **Create pull request**.
+
+## 3.2 Review and Merge
+
+1.  Click the **Files changed** tab. See your change (Green lines).
+2.  Go back to **Conversation**.
+3.  Since you are the owner, you can merge your own PR.
+4.  Click **Merge pull request** -> **Confirm merge**.
+5.  **Delete branch**: Click the button to delete the `feat/app-update` branch. Clean up after yourself!
+
+## 3.3 Sync Local
+
+Your `main` branch on GitHub has the change. Your `main` branch on your laptop does **not**.
+
+```bash
+# Switch back to main
+git checkout main
+
+# Pull the changes down
+git pull origin main
+```
+
+Verify that `app.py` on your laptop now has the new title.
+
+# Exercise 4: Templates (The Audit Trail)
+
+Let's make sure everyone fills out a checklist before merging.
+
+## 4.1 Create the Template Directory
+
+```bash
+# Make a special folder for GitHub config
+mkdir .github
+```
+
+## 4.2 Create the Template File
+
+Create a file named `.github/pull_request_template.md`:
+
+```markdown
+# Goal
+(What does this change do?)
+
+# Checklist
+- [ ] Tests passed?
+- [ ] Documentation updated?
+- [ ] 4-eye check completed?
+
+# Audit Trail
+- [ ] Governance Committee Approval (if > £5m impact)
+- [ ] Risk Assessment attached
+
+```
+
+## 4.3 Ship It
+
+1.  Create a branch: `git checkout -b add-template`
+2.  Add and commit: `git add .github/pull_request_template.md` -> `git commit -m "Add PR template"`
+3.  Push: `git push -u origin add-template`
+4.  **Go to GitHub**: Create a PR.
+5.  **Magic**: Notice that the description box is pre-filled with your checklist!
+
+# Exercise 5: The "Revert" (Time Travel)
+
+## 5.1 Make a Mistake
+
+1.  Create a branch `oops-branch`.
+2.  Delete a critical line in `app.py` (e.g., delete the entire `server` function).
+3.  Commit it: `git commit -am "I am tired and made a mistake"`
+4.  Push and Merge this PR. (Yes, really).
+
+## 5.2 The Panic
+
+Pull `main` locally (`git pull`). Run your app. It's broken.
+
+## 5.3 The Fix
+
+We need to undo that specific commit.
+
+1.  Find the "bad" commit hash.
+    *   Run `git log --oneline`.
+    *   Find the merge commit or the specific commit "I am tired...".
+2.  Revert it.
+
+```bash
+# Revert the specific commit (creates a NEW commit that does the opposite)
+git revert <COMMIT_HASH>
+```
+
+3.  Save the commit message that pops up.
+4.  Push the fix: `git push origin main`.
+
+**Result**: Your app works again. The history shows the mistake *and* the fix. This is a perfect audit trail.

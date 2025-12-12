@@ -1,0 +1,90 @@
+---
+title: "Session 7 Lab: Performance & Optimization"
+format: html
+editor: source
+---
+
+## Introduction
+
+In this lab, you will experience the frustration of a slow application and then fix it using **Caching** and **Debouncing**.
+
+## Exercise 1: The "Slow" App
+
+1.  Navigate to `Session-07/App-Starter`.
+2.  Run the app: `shiny run performance_lab.py`.
+3.  Try moving the "Sample Size" slider.
+4.  **Observe**: Notice the lag? The console prints "Querying Database..." every time you move it.
+
+## Exercise 2: Identify the Bottleneck
+
+Open `performance_lab.py`. Look at the `get_data` function.
+
+```python
+def get_data(n):
+    print("Querying Database... (Slow)")
+    time.sleep(1.0) # Simulate a slow SQL query
+    return pd.DataFrame({'x': range(n), 'y': np.random.randn(n)})
+```
+
+And look at how it's called:
+
+```python
+@render.plot
+def plot_result():
+    df = get_data(input.n()) # Calls the slow function inside the render
+    return plt.plot(df['x'], df['y'])
+
+@render.text
+def show_count():
+    df = get_data(input.n()) # Calls it AGAIN!
+    return f"Rows: {len(df)}"
+```
+
+Every time `input.n` changes, `get_data` is called **twice**. Once for the plot, once for the text.
+
+## Exercise 3: Implement Caching
+
+We want to call `get_data` only once per input change.
+
+1.  Import `reactive` from `shiny`.
+2.  Wrap `get_data` in a `@reactive.calc` decorator.
+3.  **Important**: When you call a reactive calculation, you must add `()` parentheses, just like an input.
+
+```python
+@reactive.calc
+def get_data_cached():
+    n = input.n()
+    print("Querying Database... (Slow)")
+    time.sleep(1.0)
+    return pd.DataFrame({'x': range(n), 'y': np.random.randn(n)})
+
+@render.plot
+def plot_result():
+    df = get_data_cached() # Note the ()
+    ...
+```
+
+**Task**: Modify your code to use a cached calculation. Verify that "Querying Database..." only prints once when you move the slider.
+
+## Exercise 4: Debouncing
+
+Even with caching, if you slide from 100 to 500, you might trigger queries for 101, 102, 103...
+
+We want to wait until you stop sliding.
+
+1.  Unfortunately, Shiny for Python doesn't have a built-in `debounce` for inputs yet (it's coming!).
+2.  But we can simulate it or use a "Submit" button.
+3.  **Task**: Add an `input_action_button("submit", "Run Query")`.
+4.  Change your reactive calculation to depend on `input.submit()` instead of `input.n()`.
+
+```python
+@reactive.calc
+def get_data_cached():
+    input.submit() # Take a dependency on the button
+    with reactive.isolate(): # Don't react to the slider directly
+        n = input.n()
+    
+    # ... rest of code
+```
+
+Now the app only updates when you click "Run Query". This is the ultimate performance saver for heavy queries!

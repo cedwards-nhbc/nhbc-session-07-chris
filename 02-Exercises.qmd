@@ -1,0 +1,112 @@
+---
+title: "Session 7: The Interactive Actuary"
+subtitle: "Building the Outlier Excluder"
+format: html
+---
+
+# Introduction
+
+In Session 6, we built the engine: a Python script that loads data, fits a curve, and saves assumptions.
+
+In Session 7, we build the **Cockpit**.
+
+We will use **Shiny for Python** to create a web application that allows you to:
+
+1.  Visualize the ACPH data interactively.
+2.  **Exclude** specific years (like the 2017 Cladding Shock) from the curve fit.
+3.  **Save** your decisions back to the JSON Assumption Store.
+
+# The Architecture
+
+We are building a "Human-in-the-Loop" system.
+
+*   **Input**: `Policy_Book.parquet`, `Claims_Transaction.parquet`, `assumptions.json`.
+*   **User Action**: Select Product, Toggle Exclusions.
+*   **Reactive Logic**: Filter Data $\rightarrow$ Fit Curve $\rightarrow$ Calculate Ultimate.
+*   **Output**: Plotly Chart, Parameter Table, Updated JSON.
+
+# Exercise 1: The Skeleton App
+
+Open `Session-7/App-Starter/app.py`.
+
+This file contains the **UI (User Interface)** code. It defines the layout:
+*   A sidebar with a dropdown for "Product".
+*   A set of checkboxes for "Exclude Years".
+*   A main area for the plot.
+
+## Task 1.1: Run the App
+Open a terminal in VS Code and run:
+```bash
+shiny run Session-7/App-Starter/app.py
+```
+(Or click the "Run" button if you have the Shiny extension installed).
+You should see the layout, but the plot is empty.
+
+# Exercise 2: Connecting the Data
+
+We need to load our Parquet files.
+
+## Task 2.1: Load Data
+In `app.py`, look for the `# TODO: Load Data` section.
+Add the Polars code to load `Policy_Book.parquet` and `Claims_Transaction.parquet`.
+*Hint: You can copy this from your Session 6 work.*
+
+## Task 2.2: The Reactive Filter
+We need a function that filters the data based on the selected **Product**.
+In Shiny, we use `@reactive.Calc` for this.
+
+```python
+@reactive.Calc
+def filtered_data():
+    # Get the input
+    selected_product = input.product()
+    
+    # Filter Polars DataFrame
+    df = df_acph.filter(pl.col("ProductType") == selected_product)
+    return df
+```
+
+# Exercise 3: The Interactive Curve Fit
+
+Now for the magic. We want to fit the curve *only to the points that are NOT selected in the grid*.
+
+## Task 3.1: The Data Grid
+Instead of checkboxes, we will use a Data Grid to show the data points.
+```python
+@render.data_frame
+def exclusion_grid():
+    df = filtered_data()
+    # ... return render.DataGrid(df, selection_mode="rows") ...
+```
+
+## Task 3.2: Fit the Curve
+Inside the `fitted_curve` reactive function:
+1.  Get the `filtered_data()`.
+2.  Get the `input.exclusion_grid_selected_rows()`.
+3.  Filter out the selected rows from the dataframe.
+4.  Aggregate and fit the curve.
+
+# Exercise 4: The "Save" Button
+
+Finally, we want to persist our decision.
+
+## Task 4.1: The Effect
+When `input.save_btn()` is clicked:
+1.  Load the current `assumptions.json`.
+2.  Get the list of excluded points (CohortYear, DevYear) from the selected rows.
+3.  Save this list to the JSON under `"excluded_points"`.
+
+```python
+@reactive.Effect
+@reactive.event(input.save_btn)
+def save_assumptions():
+    # ... logic to save JSON ...
+    ui.notification_show("Saved!", type="success")
+```
+
+# Bonus: The "Impact" Metric
+
+Can you add a "Value Box" to the UI that shows the **Financial Impact** of your exclusion?
+*   Calculate Ultimate with all years.
+*   Calculate Ultimate with excluded years.
+*   Display `Impact: £(1.5m)`.
