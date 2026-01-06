@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "version": "1.0",
+        "author": "Actuary A",
+        "date": "2025-11-28"
+    },
+    "products": {
+        "Detached": {
+            "inflation_rate": 0.04,
+            "tail_factor": 1.05
+        },
+        "Flat": {
+            "inflation_rate": 0.06,
+            "tail_factor": 1.1
+        }
+    },
+    "global": {
+        "discount_rate": 0.03
+    }
+}

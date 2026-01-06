@@ -1,0 +1,66 @@
+```{python}
+from shiny import App, render, ui, reactive
+import polars as pl
+import numpy as np
+import plotly.express as px
+from scipy.optimize import curve_fit
+import json
+from pathlib import Path
+from shinywidgets import output_widget, render_widget
+```
+
+```{python}
+def load_data():
+    # We'll look for the files in the parent directory or current
+    
+    # Try to find the data files
+    possible_paths = [Path("."), Path(".."), Path("../..")]
+    data_dir = None
+    for p in possible_paths:
+        if (p / "Policy_Book.parquet").exists():
+            data_dir = p
+            break
+            
+    if data_dir is None:
+        # Fallback for demo purposes if files missing
+        return pl.DataFrame()
+
+    df_policies = pl.read_parquet(data_dir / "Policy_Book.parquet")
+    df_claims = pl.read_parquet(data_dir / "Claims_Transaction.parquet")
+
+    # 1. Exposure
+    df_exposure = (
+        df_policies
+        .group_by("CohortYear")
+        .agg(pl.col("NumHomes").sum().alias("TotalHomes"))
+    )
+
+    # 2. Claims Dev
+    df_dev = (
+        df_claims
+        .join(df_policies.select(["PolicyID", "CohortYear", "ProductType"]), on="PolicyID")
+        .with_columns(
+            (pl.col("ReportDate").dt.year() - pl.col("CohortYear")).alias("DevYear")
+        )
+        .group_by(["CohortYear", "DevYear", "ProductType"])
+        .agg(pl.col("PaymentAmount").sum().alias("TotalClaims"))
+    )
+
+    # 3. ACPH
+    df_acph = (
+        df_dev
+        .join(df_exposure, on="CohortYear")
+        .with_columns(
+            (pl.col("TotalClaims") / pl.col("TotalHomes")).alias("ACPH")
+        )
+        .sort(["ProductType", "CohortYear", "DevYear"])
+    )
+    
+    return df_acph
+
+df_acph = load_data()
+```
+
+```{python}
+df_acph
+```

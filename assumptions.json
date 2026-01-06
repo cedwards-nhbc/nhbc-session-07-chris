@@ -1,0 +1,12 @@
+{
+    "products": {
+        "Detached": {
+            "excluded_points": [
+                {
+                    "CohortYear": 1995,
+                    "DevYear": 1
+                }
+            ]
+        }
+    }
+}
